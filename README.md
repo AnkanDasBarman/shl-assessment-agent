@@ -135,3 +135,10 @@ POST `/chat`
   "end_of_conversation": true
 }
 ```
+## Live Demo
+
+API:
+https://ankan03282002-shl-assessment-agent.hf.space
+
+Swagger Docs:
+https://ankan03282002-shl-assessment-agent.hf.space/docs
