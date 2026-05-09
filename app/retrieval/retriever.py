@@ -25,7 +25,7 @@ if not os.path.exists(
     print("Building embeddings...")
 
     subprocess.run(
-        ["python", "scripts/build_embeddings.py"],
+        ["python3", "scripts/build_embeddings.py"],
         check=True
     )
 
