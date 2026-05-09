@@ -1,11 +1,14 @@
 import os
 import pickle
-import subprocess
 
 import faiss
 import numpy as np
 from sentence_transformers import (
     SentenceTransformer
+)
+
+from scripts.build_embeddings import (
+    main as build_embeddings
 )
 
 
@@ -24,10 +27,7 @@ if not os.path.exists(
     print("FAISS index missing...")
     print("Building embeddings...")
 
-    subprocess.run(
-        ["python3", "scripts/build_embeddings.py"],
-        check=True
-    )
+    build_embeddings()
 
 
 print("Loading embedding model...")
