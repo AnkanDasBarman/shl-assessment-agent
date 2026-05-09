@@ -21,6 +21,16 @@ class ChatRequest(BaseModel):
     query: str
 
 
+@app.get("/")
+def home():
+    return {
+        "message": (
+            "SHL Assessment Recommendation "
+            "API is running"
+        )
+    }
+
+
 @app.get("/health")
 def health_check():
     return {
